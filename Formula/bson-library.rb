@@ -1,4 +1,4 @@
-class Libbson < Formula
+class BsonLibrary < Formula
   version "1.3.5"
   desc ""
   homepage ""
