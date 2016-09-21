@@ -6,8 +6,8 @@ class MongoCxxDriver < Formula
   sha256 ""
 
   depends_on "cmake" => :build
-  depends_on "homebrew/my/libbson"
-  depends_on "homebrew/my/mongo-c-driver"
+  depends_on "libbson"
+  depends_on "mongo-c"
   depends_on "xz"
   def install
     system "cmake", "-DCMAKE_INSTALL_PREFIX=#{prefix}", "."
