@@ -9,7 +9,7 @@ class Libiec61850 < Formula
   depends_on "xz"
 
   def install
-    system "cmake", "-DAPPLE=ON","-DUNIX=ON","-DCONFIG_MMS_THREADLESS_STACK=ON","-DBUILD_EXAMPLES=OFF","-DCMAKE_INSTALL_PREFIX=#{prefix}","."
+    system "cmake", "-DCONFIG_MMS_THREADLESS_STACK=ON","-DBUILD_EXAMPLES=OFF","-DCMAKE_INSTALL_PREFIX=#{prefix}","."
     system "make"
     system "make", "install"
   end
