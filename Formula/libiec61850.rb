@@ -5,9 +5,6 @@ class Libiec61850 < Formula
   url "http://libiec61850.com/libiec61850/wp-content/uploads/2016/10/libiec61850-0.9.3.tgz"
   sha256 ""
 
-  depends_on "cmake" => :build
-  depends_on "xz"
-
   def install
     system "cmake", "-DBUILD_EXAMPLES=OFF", "-DCMAKE_INSTALL_PREFIX=#{prefix}", "."
     system "make"
