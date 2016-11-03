@@ -1,8 +1,8 @@
 class MongoCxxDriver < Formula
-  version "3.0.1"
+  version "3.0.2"
   desc ""
   homepage ""
-  url "https://github.com/mongodb/mongo-cxx-driver/archive/r3.0.1.tar.gz"
+  url "https://github.com/mongodb/mongo-cxx-driver/archive/r3.0.2.tar.gz"
   sha256 ""
 
   depends_on "mongo-c"
